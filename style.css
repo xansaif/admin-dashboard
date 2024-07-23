@@ -1,0 +1,42 @@
+
+
+.container
+{
+    height: 100vh;
+    display: inline grid;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+    "sidebar header header header header"
+    "sidebar body body body note"
+    "sidebar body body body note"
+    "sidebar body body body note"
+    "sidebar body body body note"
+    "sidebar body body body note"
+    ;
+}
+
+.sidebar
+{
+
+    grid-area: sidebar;
+    background-color: lime;
+}
+
+.header
+{
+    grid-area: header;
+    background-color: blue;
+}
+
+.body
+{
+    grid-area: body;
+    background-color: red;
+}
+
+.note 
+{
+    grid-area: note;
+    background-color: green;
+}
