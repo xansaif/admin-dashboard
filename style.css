@@ -1,26 +1,36 @@
-
+:root
+{
+    --side-text: white;
+}
 
 .container
 {
     height: 100vh;
     display: inline grid;
     display: grid;
-    gap: 10px;
+    gap: 1rem;
     grid-template-areas:
     "sidebar header header header header"
     "sidebar body body body note"
     "sidebar body body body note"
-    "sidebar body body body note"
-    "sidebar body body body note"
-    "sidebar body body body note"
     ;
 }
+.container > div
+{
+    border-radius: 10px;
+}
+
 
 .sidebar
 {
-
+    color: var(--side-text);
     grid-area: sidebar;
-    background-color: lime;
+    background-color: darkblue;
+}
+
+ul
+{
+    list-style-type: none;
 }
 
 .header
@@ -37,6 +47,44 @@
 
 .note 
 {
+    padding: 10px;
+    min-width: 50px;
+    display: grid;
+    grid-template-rows: repeat(2, minmax(200px, 1fr));
+    gap: 8px;
     grid-area: note;
     background-color: green;
+
+}
+.posts > div
+{
+    background-color: white;
+    border-left-style: solid;
+    border-left-color:yellow ;
+}
+
+.posts
+{   
+    padding: 1rem  3rem;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px ,1fr));   
+    grid-template-rows: repeat(3, minmax(200px ,1fr));
+}
+
+.news
+{
+    padding: 20px;
+}
+
+.news-container > :not(:last-child)
+{
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.note > div
+{
+    background-color: aqua;
 }
