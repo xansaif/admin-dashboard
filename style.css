@@ -1,5 +1,6 @@
 :root
 {
+    background-color: rgb(228, 228, 228);
     --side-text: white;
 }
 
@@ -8,7 +9,8 @@
     height: 100vh;
     display: inline grid;
     display: grid;
-    gap: 1rem;
+    row-gap: 3rem;
+    column-gap: 2rem;
     grid-template-areas:
     "sidebar header header header header"
     "sidebar body body body note"
@@ -25,7 +27,7 @@
 {
     color: var(--side-text);
     grid-area: sidebar;
-    background-color: darkblue;
+    background-color: #1992d4;
 }
 
 ul
@@ -37,7 +39,12 @@ ul
 {
     grid-area: header;
     background-color: blue;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(50px ,1fr));
+    grid-template-rows: repeat(2, minmax(50px ,1fr));
 }
+
 
 .body
 {
