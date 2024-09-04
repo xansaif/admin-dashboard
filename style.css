@@ -5,9 +5,12 @@
     margin: -10px;
     padding: 0px;
     overflow-x: hidden;
-
 }
-
+body
+{
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+  
 a
 {
     text-decoration: none;
@@ -31,7 +34,10 @@ a
     border-radius: 10px;
 }
 
-
+.your-project
+{
+    margin-left: 45px;
+}
 .sidebar
 {
     color: var(--side-text);
@@ -74,6 +80,21 @@ ul
     display: grid;
     grid-template-columns: repeat(2, minmax(50px ,1fr));
     grid-template-rows: repeat(2, minmax(50px ,1fr));
+}
+
+.intro, .trending
+{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.intro img
+{
+
+    max-height: 80px;
+    border-radius: 100%;
 }
 
 .search
@@ -138,7 +159,7 @@ ul
     min-width: 50px;
     display: grid;
     grid-template-rows: repeat(2, minmax(200px, 1fr));
-    gap: 8px;
+    gap: 10px;
     grid-area: note;
 
 }
@@ -152,10 +173,34 @@ ul
 .posts
 {   
     padding: 1rem  3rem;
-    gap: 20px;
+    gap: 50px;
     display: grid;
     grid-template-columns: repeat(2, minmax(200px ,1fr));   
     grid-template-rows: repeat(3, minmax(200px ,1fr));
+}
+.post
+{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post-btns svg
+{
+    width: 100%;
+}
+
+.post-body
+{
+    max-width: 200px;
+}
+
+.post-btns
+{
+    display: flex;
+    justify-content: end;
+    gap: 8px;
 }
 
 .news, .trend
@@ -170,7 +215,10 @@ ul
     border-color: black;
 }
 
-
+.news-container p
+{
+    max-width: 250px;
+}
 
 .note > div
 {
@@ -180,4 +228,11 @@ ul
 svg
 {
     max-width: 30px;
+}
+
+.trending img
+{
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 100%; 
 }
