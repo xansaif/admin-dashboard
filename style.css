@@ -5,11 +5,10 @@
     margin: -10px;
     padding: 0px;
     overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
-body
-{
-    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
+
   
 a
 {
@@ -22,7 +21,7 @@ a
     height: 100vh;
     display: inline grid;
     display: grid;
-    row-gap: 3rem;
+    row-gap: 1.5rem;
     grid-template-areas:
     "sidebar header header header header"
     "sidebar body body body note"
@@ -74,9 +73,9 @@ ul
 
 .header
 {
-    padding: 10px;
+    padding: 5px;
     grid-area: header;
-    background-color: #ffffff;
+    background-color: rgb(255, 250, 254);
     display: grid;
     grid-template-columns: repeat(2, minmax(50px ,1fr));
     grid-template-rows: repeat(2, minmax(50px ,1fr));
@@ -159,15 +158,16 @@ ul
     min-width: 50px;
     display: grid;
     grid-template-rows: repeat(2, minmax(200px, 1fr));
-    gap: 10px;
+    gap: 30px;
     grid-area: note;
 
 }
 .posts > div
 {
+    border-width: 4px;
     background-color: white;
     border-left-style: solid;
-    border-left-color:yellow ;
+    border-left-color:rgba(255, 255, 115, 0.883) ;
 }
 
 .posts
